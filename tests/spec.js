@@ -1,4 +1,3 @@
-// spec.js
 describe('Protractor Demo App', function () {
     var posts = element.all(by.repeater('post in posts'));
 
@@ -32,5 +31,4 @@ describe('Protractor Demo App', function () {
         expect(firstPostTitle.getText()).toEqual('test title');
 
     });
-
 });
