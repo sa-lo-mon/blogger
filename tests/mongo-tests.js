@@ -2,7 +2,7 @@ var chai = require('chai');
 var expect = require('chai').expect;
 
 describe('MongoDB Access Layer Test', function () {
-    var mongoAccessLayer = require('./www/js/mongoAccessLayer.js');
+    var mongoAccessLayer = require('./../www/js/mongoAccessLayer.js');
     it('must have connection to MongoDB', function (done) {
         mongoAccessLayer.connect(function (err, data) {
             expect(data).to.not.equal(null);
